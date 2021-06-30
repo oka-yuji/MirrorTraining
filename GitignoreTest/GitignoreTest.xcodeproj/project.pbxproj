@@ -11,15 +11,19 @@
 		28E8524F268B6A3600167AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8524E268B6A3600167AA4 /* ContentView.swift */; };
 		28E85251268B6A3700167AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E85250268B6A3700167AA4 /* Assets.xcassets */; };
 		28E85254268B6A3700167AA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E85253268B6A3700167AA4 /* Preview Assets.xcassets */; };
+		FFE31647E919CAA8311EE1FB /* Pods_GitignoreTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD351B8C8F4A4899262BCE1 /* Pods_GitignoreTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D50F186CDF18A24A5CAB522 /* Pods-GitignoreTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitignoreTest.debug.xcconfig"; path = "Target Support Files/Pods-GitignoreTest/Pods-GitignoreTest.debug.xcconfig"; sourceTree = "<group>"; };
 		28E85249268B6A3600167AA4 /* GitignoreTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitignoreTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E8524C268B6A3600167AA4 /* GitignoreTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitignoreTestApp.swift; sourceTree = "<group>"; };
 		28E8524E268B6A3600167AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28E85250268B6A3700167AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E85253268B6A3700167AA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28E85255268B6A3700167AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915C8931B22A74BA4AC64491 /* Pods-GitignoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitignoreTest.release.xcconfig"; path = "Target Support Files/Pods-GitignoreTest/Pods-GitignoreTest.release.xcconfig"; sourceTree = "<group>"; };
+		9AD351B8C8F4A4899262BCE1 /* Pods_GitignoreTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitignoreTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE31647E919CAA8311EE1FB /* Pods_GitignoreTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				28E8524B268B6A3600167AA4 /* GitignoreTest */,
 				28E8524A268B6A3600167AA4 /* Products */,
+				5464E7ABDCF00269CBDF4FD7 /* Pods */,
+				DF15ADDBD78EB1A06CC679D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5464E7ABDCF00269CBDF4FD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D50F186CDF18A24A5CAB522 /* Pods-GitignoreTest.debug.xcconfig */,
+				915C8931B22A74BA4AC64491 /* Pods-GitignoreTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF15ADDBD78EB1A06CC679D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD351B8C8F4A4899262BCE1 /* Pods_GitignoreTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +100,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E85258268B6A3700167AA4 /* Build configuration list for PBXNativeTarget "GitignoreTest" */;
 			buildPhases = (
+				28A5697A268C066D003FE901 /* ShellScript */,
+				11933B37CD38CF967C7D88F2 /* [CP] Check Pods Manifest.lock */,
 				28E85245268B6A3600167AA4 /* Sources */,
 				28E85246268B6A3600167AA4 /* Frameworks */,
 				28E85247268B6A3600167AA4 /* Resources */,
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11933B37CD38CF967C7D88F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitignoreTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28A5697A268C066D003FE901 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28E85245268B6A3600167AA4 /* Sources */ = {
@@ -264,6 +332,7 @@
 		};
 		28E85259268B6A3700167AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D50F186CDF18A24A5CAB522 /* Pods-GitignoreTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +355,7 @@
 		};
 		28E8525A268B6A3700167AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915C8931B22A74BA4AC64491 /* Pods-GitignoreTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
