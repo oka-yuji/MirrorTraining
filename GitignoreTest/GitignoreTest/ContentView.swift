@@ -13,6 +13,7 @@ struct ContentView: View {
         Text("テキスト更に変えたよ")
             .padding()
             Text("テキストを追加した")
+            Text("テキストを追加した2")
         }
     }
 }
